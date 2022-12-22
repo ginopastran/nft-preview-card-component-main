@@ -1,0 +1,135 @@
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Verydarkbluemain: hsl(217, 54%, 11%);
+  --Verydarkbluecard: hsl(216, 50%, 16%);
+  --Verydarkblueline: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--Verydarkbluemain);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  background-color: var(--Verydarkbluecard);
+  max-width: 300px;
+  max-height: 1440px;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.cube-img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-name span {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--White);
+  cursor: pointer;
+}
+
+.card-info-mid {
+  font-weight: 300;
+  color: var(--Softblue);
+  font-size: 1rem;
+}
+
+.card-name span:hover {
+  color: var(--Cyan);
+}
+
+.card-value-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eth {
+  color: var(--Cyan);
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.days-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.days-text {
+  color: var(--Softblue);
+}
+
+.line hr {
+  border: 0;
+  height: 1px;
+  background: var(--Verydarkblueline);
+}
+
+.card-creator {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-creator img {
+  height: 1.5rem;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.creator-text {
+  color: var(--Softblue);
+}
+
+.creator-text span {
+  color: var(--White);
+  cursor: pointer;
+}
+
+.creator-text span:hover {
+  color: var(--Cyan);
+}
+
+.attribution {
+  color: var(--White);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Cyan);
+}
